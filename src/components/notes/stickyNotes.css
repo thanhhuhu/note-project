@@ -8,8 +8,8 @@
 
 /* Khối note dùng grid: auto (header) / 1fr (content) / auto (footer) */
 .sticky-note {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     display: grid;
     grid-template-rows: auto 1fr auto;
     background: #fff8b3;          /* cảm giác sticky */
@@ -60,12 +60,12 @@
 }
 
 .sn-tool {
-    background: rgba(255,255,255,0.6);
-    border: 1px solid rgba(0,0,0,0.08);
-    border-radius: 6px;
+    background: transparent;
+    border: none;
     padding: 4px 6px;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
+
 }
 
 .sn-tool:hover { filter: brightness(0.98); }
@@ -75,3 +75,13 @@
 .sn-italic { font-style: italic; }
 .sn-underline { text-decoration: underline; }
 .sn-strike > span { text-decoration: line-through; }
+.sn-date {
+    background: transparent;
+
+}
+.sn-save{
+    float:left;
+    margin-left: 140px;
+    border:none;
+    background: transparent;
+}
