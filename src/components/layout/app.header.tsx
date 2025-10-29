@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import {Badge, Divider, Popover, Button, Input, Avatar,} from "antd";
+import {Badge, Popover, Button, Input, Avatar,} from "antd";
 import {SearchOutlined, BellOutlined, MenuOutlined, SettingOutlined, UserOutlined,} from "@ant-design/icons";
 import "./app.header.css";
 
@@ -21,12 +21,12 @@ const AppHeader = () => {
                             type="default"
                             aria-label="Mở menu"
                             icon={<MenuOutlined />}
-                            // onClick={() => setOpenDrawer(true)}
+
                         />
 
                         <div className="page-header__logo">
               <span className="logo" aria-label="Logo">
-                N
+
               </span>
                             <div className="search">
                                 <Input
@@ -55,9 +55,6 @@ const AppHeader = () => {
                                     <Button className="btn-icon" type="default" icon={<BellOutlined />} />
                                 </Badge>
                             </Popover>
-
-                            <Divider type="vertical" />
-
                             <Avatar size={28} icon={<UserOutlined />} />
 
                             <Button className="btn-icon" type="default" icon={<SettingOutlined />} />

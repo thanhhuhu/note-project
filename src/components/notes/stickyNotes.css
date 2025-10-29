@@ -1,0 +1,77 @@
+/* Wrapper toàn trang để canh giữa khối note */
+.note-page {
+    min-height: 100vh;
+    display: grid;
+    text-align: center;
+    background: #f5f7fb;
+}
+
+/* Khối note dùng grid: auto (header) / 1fr (content) / auto (footer) */
+.sticky-note {
+    width: 300px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background: #fff8b3;          /* cảm giác sticky */
+    border: 1px solid #e0cf70;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header controls */
+.sn-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 10px;
+    border-bottom: 1px dashed rgba(0,0,0,0.15);
+}
+
+.sn-controls button {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Textarea (ở giữa, giãn đầy) */
+.sn-textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Footer tools (dưới cùng) */
+.sn-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-top: 1px dashed rgba(0,0,0,0.15);
+}
+
+.sn-tool {
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 6px;
+    padding: 4px 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sn-tool:hover { filter: brightness(0.98); }
+
+/* (Tùy chọn) canh chữ nghiêng/đậm/… */
+.sn-bold { font-weight: 700; }
+.sn-italic { font-style: italic; }
+.sn-underline { text-decoration: underline; }
+.sn-strike > span { text-decoration: line-through; }

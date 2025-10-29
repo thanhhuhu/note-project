@@ -9,7 +9,6 @@
 .header-container {
     width: 100%;
     background: var(--bg);
-    border-bottom: 1px solid var(--border);
 }
 
 .page-header {
@@ -60,11 +59,12 @@
 }
 
 .input-search {
-    /* AntD Input đã có style; thêm viền/bo nếu cần */
+    width:500px;
+
 }
 
 .btn-search {
-    /* AntD Button primary đã có style mặc định */
+
 }
 
 .page-header__actions {
